@@ -13,15 +13,18 @@ int main()
         cout << "Enter the student's mark " << (k + 1) << ": ";
         cin >> mark;
 
-        if(mark >= 75){
+        if(mark >= 40){
             count++;
+        else{
+            cout << "Sorry!!, You do not Qualify for an exam, Try next time!!"
+        }
         }
         sum += mark;
     }
 
     average = sum / 5.0;
     cout << "The average is: " << average << endl;
-    cout << "A total of " << count << " distinctions!" << endl;
+    cout << "The student: " << count << " Qualifies!" << endl;
 
     return 0;
 }
